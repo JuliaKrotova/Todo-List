@@ -1,7 +1,7 @@
 include ../../components/form/form
 
 mixin modal-add(props)
-    section.modal.modal-add&attributes(attributes)
+    section.modal.modal-add.show&attributes(attributes)
         h2.visually-hidden Форма добавления задачи
         .container.modal__wrapper
             +form("taskAdd")

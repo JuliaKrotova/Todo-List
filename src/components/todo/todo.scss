@@ -99,8 +99,8 @@
     left: calc(50% - 2px);
   }
 
-  &:hover &::before,
-  &:hover &::after {
+  &:hover::before,
+  &:hover::after {
     background-color: $white;
   }
 }

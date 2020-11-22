@@ -1,0 +1,12 @@
+include ../../components/form/form
+
+mixin modal-add(props)
+    section.modal.modal-add&attributes(attributes)
+        h2.visually-hidden Форма добавления задачи
+        .container.modal__wrapper
+            +form("taskAdd")
+                .form__row
+                        textarea(name="taskArea", placeholder="Введите текст задачи", required)
+                .form__row.form__row--buttons
+                    button.button.form__button.modal-add__button-close Закрыть
+                    button(type="submit").button.button--current.form__button.modal-add__button-add Добавить

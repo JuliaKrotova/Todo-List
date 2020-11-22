@@ -1,0 +1,8 @@
+.modal-edit {
+    $root: &;
+
+    &.show {
+        display: block;
+        animation: bounce 0.5s;
+      }
+}

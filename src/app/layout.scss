@@ -16,7 +16,7 @@ body {
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *::after,
@@ -25,14 +25,20 @@ body {
 }
 
 main {
-    position: relative;
-  }
+  position: relative;
+}
 
-h1, h2, h3, h4, h5, ul, li {
-    font-size: inherit;
-    font-weight: inherit;
-    padding: 0;
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li {
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 button,
@@ -45,34 +51,34 @@ svg path {
 }
 
 .hidden {
-    display: none;
-  }
+  display: none;
+}
 
 .visually-hidden {
   @include visually-hidden;
 }
 
 .container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    
-    @media (min-width: $desktop-width) {
-        max-width: 1280px;
-    }
-  }
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 
-  .button {
-    @include button;
+  @media (min-width: $desktop-width) {
+    max-width: 1280px;
   }
+}
 
-  .button--current,
-  .button:focus,
-  .button:hover {
-    background-color: $blue;
-    color: $white
+.button {
+  @include button;
+}
+
+.button--current,
+.button:focus,
+.button:hover {
+  background-color: $blue;
+  color: $white;
 }
 
 .button--current:hover,

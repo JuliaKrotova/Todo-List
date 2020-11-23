@@ -1,9 +1,8 @@
 .modal-add {
-    $root: &;
+  $root: &;
 
-    &.show {
-        display: block;
-        animation: bounce 0.5s;
-      }
+  &.show {
+    display: block;
+    animation: bounce 0.5s;
+  }
 }
-

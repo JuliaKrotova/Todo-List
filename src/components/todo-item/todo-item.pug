@@ -1,0 +1,7 @@
+mixin todo-item(task)
+    li.todo__item&attributes(attributes)
+        label.todo__label
+            span.todo__span= task
+            input(type="checkbox").visually-hidden.todo__check-input
+            span.todo__checkbox
+        button.todo__action

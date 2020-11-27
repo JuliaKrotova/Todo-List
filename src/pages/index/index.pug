@@ -1,8 +1,12 @@
 extends ../../app/layout
+include ../../components/todo-item/todo-item
 include ../../components/todo/todo
 include ../../components/modal-add/modal-add
 include ../../components/modal-edit/modal-edit
 include ../../components/modal-backdrop/modal-backdrop
+
+
+
 
 block title
     | Главная
@@ -10,7 +14,10 @@ block title
 block content
     main(data-barba="container" data-barba-namespace="index")
         .container
+            - let tasksData = ['Пройти стажировку в Онли', 'Побриться', 'Купить молоко', 'Не забыть забрать сына из садика', 'Купить сыр'];
             +todo
+                each task in tasksData
+                    +todo-item(task)
         +modal-add
         +modal-edit
         +modal-backdrop

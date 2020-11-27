@@ -1,15 +1,15 @@
 include ../../components/form/form
 
 mixin modal-edit(props)
-    section.modal.modal-edit&attributes(attributes)
+    section.modal.modal--edit&attributes(attributes)
         h2.visually-hidden Форма редактирования задачи
         .container.modal__wrapper
             +form("taskEdit")
                 .form__row
                     input(type="text" name="taskInput" required)
                 .form__row.form__row--buttons
-                    button.button.form__button.modal-edit__button-close Закрыть
-                    button(type="submit").button.button--current.form__button.modal-edit__button-edit Сохранить
+                    button.button.form__button.form__button--close Закрыть
+                    button(type="submit").button.button--current.form__button.form__button--edit Сохранить
             
 
 

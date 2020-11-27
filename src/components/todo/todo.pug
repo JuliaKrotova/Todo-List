@@ -3,17 +3,8 @@ mixin todo(props)
         h2.visually-hidden Задачи
         p.todo__empty.hidden Список задач пуст
 
-        - let tasksData = ['Пройти стажировку в Онли', 'Побриться', 'Купить молоко', 'Не забыть забрать сына из садика', 'Купить сыр'];
-
         ul.todo__list
-            each task in tasksData
-                li.todo__item
-                    label.todo__label
-                        span.todo__span= task
-                        input(type="checkbox").visually-hidden.todo__check-input
-                        span.todo__checkbox
-                    button.todo__action
-            
+            block
 
         button(aria-label="Добавить задачу").button.todo__button--add
             
